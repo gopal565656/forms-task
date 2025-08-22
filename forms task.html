@@ -5,98 +5,154 @@
     <body>
         <form action="submit.html">
             <fieldset>           
-            <img src="tsrtc.png" width="700">
-            </fieldset>
-            <option value=""></option>
+            <img src="./images/tsrtc.png" width="700">
             <fieldset><legend style="background:lightblue;">Applicant Details</legend>
-                
-            <lable for="name">Name:</lable>
-            <input type="text" id="name">
-            <lable for="">Father Name:</lable>
-            <input type="text"><br>
-            <option value=""></option>
-            <label for="">Date of birth:</label>
-            <input type="date">
-            <label for="male">Gender:</label>
-            <input type="radio" id="male" name="Gender" value="male">
+    <table border="0" cellpadding="6" cellspacing="">
+        <tr>
+            <td>Name:<lable for="name"name style="color: red;">*</lable></td>
+            <td><input type="text" id="name"></td>
+            <td><lable for="">Father Name*:</lable></td>
+            <td><input type="text"><br></td>
+        </tr>
+        <tr>
+            <td><label for="">Date of birth:</label></td>
+            <td><input type="date"></td>
+            <td><label for="male">Gender:</label></td>
+            <td><input type="radio" id="male" name="Gender" value="male">
             <label for="male">:male</label>
             <input type="radio" id="female" name="Gender" value="female">
-            <label for="female">:female</label><br>
-            <option value=""></option>
-            <lable for="">Whatsapp No:</lable>
-            <input type="tel" maxlength="10">
-            <lable for="">E-mail Id:</lable>
-            <input type="email"><br>
-            <option value=""></option>
-            <lable for="">Aadhaar No:</lable>
-            <input type="text" maxlength="12"> 
-            <lable for="">Photo:</lable>
-            <input type="file"><br>
-            <option value=""></option>
+            <label for="female">:female</label><br></td>
+        </tr>
+        <tr>
+            <td><lable for="">Whatsapp No:</lable></td>
+            <td><input type="tel" maxlength="10"></td>
+            <td><lable for="">E-mail Id:</lable></td>
+            <td><input type="email"><br></td>
+        </tr>
+        <tr>
+            <td><lable for="">Aadhaar No:</lable></td>
+            <td><input type="text" maxlength="12"></td>
+            <td><lable for="">Photo:</lable></td>
+            <td><input type="file"><br></td>
+        </tr>
+    </table>
             </fieldset>
-
-            <fieldset><legend style="background:lightblue;">Residential Address Details</legend>
-            <label for="">Applicant's Address:</label>
-            <input type="text">
-            <lable for="">District:</lable>
-            <select id="city">
+    <fieldset><legend style="background:lightblue;">Residential Address Details</legend>
+    <table>
+        <tr>
+            <td><label for="Applicant's Address:">Applicant's Address:</label></td>
+            <td><textarea name=""></textarea></td>
+            <td><lable for="">District:</lable></td>
+            <td>
+                <select id="city">
+                    <option value="select" disabled selected>--select---</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><lable for="">Mandal:</lable></td>
+            <td><select id="city">
+                <option value="select" selected disabled>---select---</option>
+                <option value="Bhel">Bhel</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Tirupathi">Tirupathi</option>
+            </select></td>
+            <td><lable for="">Village:</lable></td>
+            <td><select id="city">
+                <option value="select" selected disabled>---select---</option>
                 <option value="hyderabad">hyderabad</option>
-            </select><option value=""></option>
-            <lable for="">Mandal:</lable>
-            <select id="city">
+                <option value="Kurnool">Kurnool</option>
+                <option value="Tirupathi">Tirupathi</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><lable for="">Pincode:</lable></td>
+            <td><input type="" ></td>
+            <td><lable for="">City:</lable></td>
+            <td><select id="city">
+                <option value="select" selected disabled>---select---</option>
+                <option value="Bhel">Bhel</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Tirupathi">Tirupathi</option>
                 <option value="hyderabad">hyderabad</option>
-            </select>
-            <lable for="">Village:</lable>
-            <select id="city">
-                <option value="hyderabad">hyderabad</option>
-            </select><option value=""></option>
-            <lable for="">Pincode:</lable>
-            <input type="">
-            <lable for="">City:</lable>
-            <select id="city">
-                <option value="hyderabad">hyderabad</option>
-            </select><option value=""></option>
-
-            <lable for="">Pass type:</lable>
-            <select id="passType">
+            </select></td>
+        </tr>
+        <tr>
+            <td><lable for="">Pass type:</lable></td>
+            <td><select id="passType">
+                <option value="select">--select---</option>
                 <option value="Student">Student</option>
                 <option value="Staff">Staff</option>
                 <option value="General">General</option>
               </select>
-            </fieldset>
-
-            <fieldset><legend style="background:lightblue;">Pass Type Detail</legend>
-            <lable for="">City:</lable>
-            <select id="city">
-                <option value="hyderabad">hyderabad</option>
-            </select>
-            <lable for="">Pass type:</lable>
-            <select id="passType">
-                <option value="select">---select---</option>
-            </select><option value=""></option>
-            </fieldset>
-
-            <fieldset><legend style="background:lightblue;">Mode of Payment & Pass collection</legend>
-            <lable for="">Payment Mode:</lable>
-            <select id="Payment">
-                <option value="online">online</option>
-            </select>
-            <lable for="">Pass Delivary Mode:</lable>
-            <select id="Payment">
-                <option value="online">select pass delivary</option>
-            </select><option value=""></option>
-            <lable for="">Center at Which you Want to collect pass:</lable>
-            <select id="Payment">
-                <option value="online">---select---</option>
-            </select>
-            </fieldset>
-            
-                <img src="tsrtc..png" width="200"><option value=""></option>
-                <input type=""><option value=""></option>
-                <input type="submit">
-        </form>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+    <fieldset><legend style="background:lightblue;">Pass Type Detail </legend>
+    <table>
+        <tr>
+            <td><lable for="">City:</lable></td>
+            <td>
+                <select id="city">
+                    <option value="select" selected disabled>---select---</option>
+                    <option value="Bhel">Bhel</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Tirupathi">Tirupathi</option>
+                    <option value="hyderabad">hyderabad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><lable for="">Pass type:</lable></td>
+            <td>
+                <select id="passType">
+                <option value="select">--select---</option>
+                <option value="Student">Student</option>
+                <option value="Staff">Staff</option>
+                <option value="General">General</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+    <fieldset><legend style="background:lightblue;">Mode of Payment & Pass collection</legend>
+        <table>
+            <tr>
+                <td><lable for="">Payment Mode:</lable></td>
+                <td>
+                    <select id="Payment">
+                       <option value="online"selected disabled>---select---</option>
+                       <option value="online">Credit</option>
+                       <option value="online">Debit</option>
+                       <option value="online">Net banking</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><lable for="">Pass Delivary Mode:</lable></td>
+                <td>
+                    <select id="Payment">
+                        <option value="online">select pass delivary</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><lable for="">Center at Which you Want to collect pass:</lable></td>
+                <td>
+                    <select id="Payment">
+                        <option value="online"selected disabled>---select---</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <center>
+    <img src="./images/tsrtc..png" width="200"><option value=""></option>
+    <input type=""><option value=""></option>
+    <input type="submit"></center>
+    </form>
     </body>
-
 </html>
-
 
